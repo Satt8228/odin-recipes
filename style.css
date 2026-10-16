@@ -8,6 +8,10 @@ html{
 
 body{
     background-color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 h1{
@@ -18,18 +22,61 @@ h1{
     padding: 10px 0;
 }
 
+#header{
+    display:flex;
+    /*border: 1px solid black;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-text{
+    margin: 10px 10px;
+}
+
+#sign{
+    height: 100px;
+    width: 400px;
+    display: inline-block;
+}
+
+.sign{
+    height: 50%;
+    width: 40%;
+    border-radius: 15px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.sign:hover{
+    background-color: rgba(102, 0, 255, 0.829);
+}
+
+
 #main-list{
-    background-color: aliceblue;
-    width: 300px;
+    display: flex;
+    flex:0 1 auto;
+    flex-wrap: wrap;
+    background-color: rgba(248, 255, 240, 0.843);
+    width: 100%;
     margin: 0 auto;
+    list-style: none;
     text-align: left;
     list-style-position: inside;
     border: 1px solid black;
     border-radius: 50px;
     padding: 10px 40px;
+    justify-content: center;    
 }
 
 #main-list a{
-    text-decoration-line: none !important;
-    /*color: inherit;
+    text-decoration-line: none !important
+}
+
+.pic{
+    margin:5px;
+    background-color: rgb(98, 43, 226);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
 }
